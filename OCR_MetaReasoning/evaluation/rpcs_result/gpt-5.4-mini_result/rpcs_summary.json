@@ -1,0 +1,98 @@
+{
+  "source_model_name": "gpt-5.4-mini",
+  "judge_model_name": "gpt-5.4",
+  "sample_count": 1500,
+  "success_count": 1500,
+  "fail_count": 0,
+  "skipped_count": 0,
+  "mean_rpcs": 3.255333333333333,
+  "mean_rpcs_normalized": 0.8138333333333333,
+  "meta_reasoning_type_mean_rpcs": {
+    "meta_abductive": 3.19,
+    "meta_deductive": 3.442,
+    "meta_inductive": 3.134
+  },
+  "meta_reasoning_type_mean_rpcs_normalized": {
+    "meta_abductive": 0.7975,
+    "meta_deductive": 0.8605,
+    "meta_inductive": 0.7835
+  },
+  "criterion_pass_rate": {
+    "capability_match": 0.9133333333333333,
+    "groundedness": 0.8766666666666667,
+    "step_completeness": 0.6853333333333333,
+    "non_hallucination": 0.78
+  },
+  "reasoning_taxonomy_mean_rpcs": {
+    "data_interpretation_reasoning": 3.3266666666666667,
+    "document_logic_reasoning": 3.3333333333333335,
+    "field_dependency_reasoning": 3.3333333333333335,
+    "layout_semantics_reasoning": 2.8866666666666667,
+    "transaction_analysis_reasoning": 3.3966666666666665
+  },
+  "per_meta_reasoning_type": {
+    "meta_deductive": {
+      "sample_count": 500,
+      "success_count": 500,
+      "fail_count": 0,
+      "skipped_count": 0,
+      "mean_rpcs": 3.442,
+      "mean_rpcs_normalized": 0.8605,
+      "criterion_pass_rate": {
+        "capability_match": 0.944,
+        "groundedness": 0.914,
+        "step_completeness": 0.75,
+        "non_hallucination": 0.834
+      },
+      "reasoning_taxonomy_mean_rpcs": {
+        "data_interpretation_reasoning": 3.59,
+        "document_logic_reasoning": 3.36,
+        "field_dependency_reasoning": 3.58,
+        "layout_semantics_reasoning": 3.02,
+        "transaction_analysis_reasoning": 3.66
+      }
+    },
+    "meta_inductive": {
+      "sample_count": 500,
+      "success_count": 500,
+      "fail_count": 0,
+      "skipped_count": 0,
+      "mean_rpcs": 3.134,
+      "mean_rpcs_normalized": 0.7835,
+      "criterion_pass_rate": {
+        "capability_match": 0.892,
+        "groundedness": 0.856,
+        "step_completeness": 0.638,
+        "non_hallucination": 0.748
+      },
+      "reasoning_taxonomy_mean_rpcs": {
+        "data_interpretation_reasoning": 2.99,
+        "document_logic_reasoning": 3.43,
+        "field_dependency_reasoning": 3.11,
+        "layout_semantics_reasoning": 2.88,
+        "transaction_analysis_reasoning": 3.26
+      }
+    },
+    "meta_abductive": {
+      "sample_count": 500,
+      "success_count": 500,
+      "fail_count": 0,
+      "skipped_count": 0,
+      "mean_rpcs": 3.19,
+      "mean_rpcs_normalized": 0.7975,
+      "criterion_pass_rate": {
+        "capability_match": 0.904,
+        "groundedness": 0.86,
+        "step_completeness": 0.668,
+        "non_hallucination": 0.758
+      },
+      "reasoning_taxonomy_mean_rpcs": {
+        "data_interpretation_reasoning": 3.4,
+        "document_logic_reasoning": 3.21,
+        "field_dependency_reasoning": 3.31,
+        "layout_semantics_reasoning": 2.76,
+        "transaction_analysis_reasoning": 3.27
+      }
+    }
+  }
+}

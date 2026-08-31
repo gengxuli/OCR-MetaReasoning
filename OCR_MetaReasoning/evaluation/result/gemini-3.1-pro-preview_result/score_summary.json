@@ -1,0 +1,49 @@
+{
+  "sample_count": 1500,
+  "success_count": 1500,
+  "fail_count": 0,
+  "MRMS": 0.8931111111111111,
+  "overall_micro_score": 0.8931111111111112,
+  "meta_reasoning_type_score": {
+    "meta_abductive": 0.9413333333333334,
+    "meta_deductive": 0.807,
+    "meta_inductive": 0.931
+  },
+  "answer_type_score": {
+    "json": 0.7702380952380952,
+    "numeric": 0.9108910891089109,
+    "string": 0.935672514619883
+  },
+  "answer_type_detail_score": {
+    "float": 0.952054794520548,
+    "integer": 0.9001782531194296,
+    "json": 0.7702380952380952,
+    "string": 0.935672514619883
+  },
+  "reasoning_taxonomy_score": {
+    "data_interpretation_reasoning": 0.96,
+    "document_logic_reasoning": 0.93,
+    "field_dependency_reasoning": 0.9166666666666666,
+    "layout_semantics_reasoning": 0.7622222222222222,
+    "transaction_analysis_reasoning": 0.8966666666666666
+  },
+  "ability_taxonomy_subscore": {
+    "meta_abductive::data_interpretation_reasoning": 0.96,
+    "meta_abductive::document_logic_reasoning": 0.99,
+    "meta_abductive::field_dependency_reasoning": 0.97,
+    "meta_abductive::layout_semantics_reasoning": 0.7966666666666665,
+    "meta_abductive::transaction_analysis_reasoning": 0.99,
+    "meta_deductive::data_interpretation_reasoning": 0.93,
+    "meta_deductive::document_logic_reasoning": 0.82,
+    "meta_deductive::field_dependency_reasoning": 0.84,
+    "meta_deductive::layout_semantics_reasoning": 0.685,
+    "meta_deductive::transaction_analysis_reasoning": 0.76,
+    "meta_inductive::data_interpretation_reasoning": 0.99,
+    "meta_inductive::document_logic_reasoning": 0.98,
+    "meta_inductive::field_dependency_reasoning": 0.94,
+    "meta_inductive::layout_semantics_reasoning": 0.805,
+    "meta_inductive::transaction_analysis_reasoning": 0.94
+  },
+  "rescored": false,
+  "reextracted": false
+}
