@@ -464,7 +464,7 @@ This work is supported by the National Key Research and Development Program of C
 
 ## License
 
-See <code>LICENSE.txt</code> for the project license. Please also consult the Hugging Face dataset card and the licenses of any upstream resources before redistributing derived data.
+See [<code>LICENSE</code>](LICENSE) for the project license. Please also consult the Hugging Face dataset card and the licenses of any upstream resources before redistributing derived data.
 
 <div align="center">
 
