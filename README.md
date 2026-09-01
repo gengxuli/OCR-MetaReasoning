@@ -90,7 +90,7 @@ The benchmark reports both final-answer correctness and reasoning-process compli
 | Property | OCR-MetaReasoning |
 | --- | --- |
 | **Primary target** | Meta-reasoning ability of MLLMs in OCR-grounded, text-rich image understanding |
-| **Input** | One image \(I\) and one question \(q\) |
+| **Input** | One image $I$ and one question $q$ |
 | **Output** | Numbered reasoning steps followed by a standalone final answer |
 | **Scale** | 1,500 samples; 500 per reasoning direction |
 | **Balance** | 3 reasoning types × 5 OCR-object categories; 100 samples per cell |
@@ -110,13 +110,13 @@ OCR-MetaReasoning is designed around three evaluation requirements:
 
 ## Meta-Reasoning Task
 
-The benchmark uses a hypothesis–rule–observation view of reasoning. Let \(H\) denote a hypothesis, candidate state, or hidden premise; \(R\) a rule, constraint, mapping, or regularity; and \(O\) an observation, result, or consequence grounded in the image.
+The benchmark uses a hypothesis–rule–observation view of reasoning. Let $H$ denote a hypothesis, candidate state, or hidden premise; $R$ a rule, constraint, mapping, or regularity; and $O$ an observation, result, or consequence grounded in the image.
 
 | Direction | Formal view | What the model must do | Typical failure mode |
 | --- | --- | --- | --- |
-| **Meta-deductive** | \(H + R \rightarrow O\) | Extract an explicit rule, bind it to image evidence, test candidate conditions, and derive the supported conclusion. | Copies a salient value without checking all clauses, thresholds, units, or exceptions. |
-| **Meta-inductive** | \(H + O \rightarrow R\) | Align multiple visible examples, infer an unstated pattern, validate it, and apply it to a target. | Matches a local field or example without identifying the stable rule. |
-| **Meta-abductive** | \(O + R \rightarrow H\) | Start from a result, anomaly, or goal; trace constraints backward; compare hypotheses; recover the unique or minimal hidden premise. | Gives a plausible explanation that is weakly grounded or does not cover all observations. |
+| **Meta-deductive** | $H + R \rightarrow O$ | Extract an explicit rule, bind it to image evidence, test candidate conditions, and derive the supported conclusion. | Copies a salient value without checking all clauses, thresholds, units, or exceptions. |
+| **Meta-inductive** | $H + O \rightarrow R$ | Align multiple visible examples, infer an unstated pattern, validate it, and apply it to a target. | Matches a local field or example without identifying the stable rule. |
+| **Meta-abductive** | $O + R \rightarrow H$ | Start from a result, anomaly, or goal; trace constraints backward; compare hypotheses; recover the unique or minimal hidden premise. | Gives a plausible explanation that is weakly grounded or does not cover all observations. |
 
 ### Expected model response
 
