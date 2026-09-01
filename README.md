@@ -14,9 +14,9 @@
 
 <p>
   <a href="https://huggingface.co/datasets/GengxuLi123/OCR-MetaReasoning"><img src="https://img.shields.io/badge/%F0%9F%A4%97%20Dataset-Hugging%20Face-FFD21F?style=flat-square" alt="Hugging Face Dataset"></a>
-  <a href="https://github.com/gengxuli/OCR-MetaReasoning"><img src="https://img.shields.io/badge/Code-available-2ea44f?style=flat-square" alt="Code available"></a>
-  <a href="LICENSE"><img src="https://img.shields.io/badge/License-see_LICENSE-0b7285?style=flat-square" alt="License"></a>
   <a href="https://arxiv.org/abs/2608.30678"><img src="https://img.shields.io/badge/arXiv-2608.30678-b31b1b?style=flat-square&logo=arxiv&logoColor=white" alt="arXiv 2608.30678"></a>
+  <a href="https://github.com/gengxuli/OCR-MetaReasoning"><img src="https://img.shields.io/badge/Code-GitHub-24292f?style=flat-square&logo=github" alt="Source code"></a>
+  <a href="LICENSE"><img src="https://img.shields.io/badge/License-MIT-0b7285?style=flat-square" alt="MIT License"></a>
 </p>
 
 <p>
@@ -429,7 +429,7 @@ OCR_MetaReasoning/evaluation/rpcs_result/${MODEL_NAME}_result/
 | <code>OCR_MetaReasoning/schemas/</code> | Dataset record schema definitions. |
 | <code>OCR_MetaReasoning/utils/</code> | Shared image conversion helpers. |
 | <code>assets/</code> | README figures and table screenshots in SVG format. |
-| <code>LICENSE.txt</code> | Project license. |
+| <code>LICENSE</code> | Project license. |
 
 ## Paper
 
