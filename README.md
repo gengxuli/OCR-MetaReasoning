@@ -1,14 +1,22 @@
+<p align="center">
+  <h2 align="center"><strong>OCR-MetaReasoning Benchmark: Evaluating the Meta-Reasoning Ability of MLLMs in Text-Rich Image Understanding</strong></h2>
+</p>
+
 <div align="center">
+<h5>
+<em>Gengxu Li<sup>1</sup>, Yuan Wu<sup>1*</sup>, Yi Chang<sup>1,2,3</sup></em>
+<br><sup>1</sup> School of Artificial Intelligence, Jilin University &emsp; <sup>2</sup> Engineering Research Center of Knowledge-Driven Human-Machine Intelligence, MOE, China</br>
+<sup>3</sup> International Center of Future Science, Jilin University
+</h5>
+</div>
 
-# OCR-MetaReasoning
-
-### Evaluating the Meta-Reasoning Ability of MLLMs in Text-Rich Image Understanding
+<div align="center">
 
 <p>
   <a href="https://huggingface.co/datasets/GengxuLi123/OCR-MetaReasoning"><img src="https://img.shields.io/badge/%F0%9F%A4%97%20Dataset-Hugging%20Face-FFD21F?style=flat-square" alt="Hugging Face Dataset"></a>
   <a href="https://github.com/gengxuli/OCR-MetaReasoning"><img src="https://img.shields.io/badge/Code-available-2ea44f?style=flat-square" alt="Code available"></a>
-  <a href="LICENSE.txt"><img src="https://img.shields.io/badge/License-see_LICENSE-0b7285?style=flat-square" alt="License"></a>
-  <a href="#paper"><img src="https://img.shields.io/badge/Paper-coming_soon-6f42c1?style=flat-square" alt="Paper coming soon"></a>
+  <a href="LICENSE"><img src="https://img.shields.io/badge/License-see_LICENSE-0b7285?style=flat-square" alt="License"></a>
+  <a href="https://arxiv.org/abs/2608.30678"><img src="https://img.shields.io/badge/arXiv-2608.30678-b31b1b?style=flat-square&logo=arxiv&logoColor=white" alt="arXiv 2608.30678"></a>
 </p>
 
 <p>
@@ -21,6 +29,7 @@
 </p>
 
 </div>
+
 
 <!--
 README layout principles are adapted from the visual-first, navigation-centered
@@ -39,6 +48,12 @@ patterns curated in https://github.com/matiassingers/awesome-readme.
   </tr>
 </table>
 </div>
+
+## News and Updates
+
+- **[`2026/09`]:** Our paper is now accessible at [arXiv](https://arxiv.org/abs/2608.30678).
+- **[`2026/08`]:** We are delighted that OCR-MetaReasoning has been accepted to EMNLP 2026 Findings!
+- **[`2026/08`]:** Release the [dataset](https://huggingface.co/datasets/GengxuLi123/OCR-MetaReasoning) and evaluation script.
 
 ## Contents
 
@@ -281,21 +296,31 @@ The following figures and tables are included as SVG assets under <code>assets/<
 
 ### Hero example
 
-![OCR-grounded abduction example](assets/hero_abduction_example.svg)
+<p align="center">
+  <img src="assets/hero_abduction_example.svg" alt="OCR-grounded abduction example">
+</p>
 
 ### Benchmark construction
 
-![OCR-MetaReasoning benchmark pipeline](assets/benchmark_pipeline.svg)
+<p align="center">
+  <img src="assets/benchmark_pipeline.svg" alt="OCR-MetaReasoning benchmark pipeline">
+</p>
 
 ### Main results
 
-![MRMS heatmap](assets/mrms_heatmap.svg)
+<p align="center">
+  <img src="assets/mrms_heatmap.svg" alt="MRMS heatmap">
+</p>
 
-![Main results on OCR-MetaReasoning](assets/main_results_table.svg)
+<p align="center">
+  <img src="assets/main_results_table.svg" alt="Main results on OCR-MetaReasoning">
+</p>
 
 ### Process–outcome contrast
 
-![RPCS and MRMS comparison](assets/rpcs_mrms_table.svg)
+<p align="center">
+  <img src="assets/rpcs_mrms_table.svg" alt="RPCS and MRMS comparison">
+</p>
 
 ## Quick Start
 
@@ -411,18 +436,21 @@ OCR_MetaReasoning/evaluation/rpcs_result/${MODEL_NAME}_result/
 **OCR-MetaReasoning Benchmark: Evaluating the Meta-Reasoning Ability of MLLMs in Text-Rich Image Understanding**  
 Gengxu Li, Yuan Wu, and Yi Chang
 
-> **ArXiv preprint:** the link will be added here after the arXiv version is available.
+> **arXiv preprint:** [arXiv:2608.30678](https://arxiv.org/abs/2608.30678)
 
 ## Citation
 
 If you use OCR-MetaReasoning, please cite:
 
 ```bibtex
-@misc{li2026ocrmetareasoning,
-  title  = {OCR-MetaReasoning Benchmark: Evaluating the Meta-Reasoning Ability of MLLMs in Text-Rich Image Understanding},
-  author = {Li, Gengxu and Wu, Yuan and Chang, Yi},
-  year   = {2026},
-  note   = {Preprint; arXiv link to be added}
+@misc{li2026ocrmetareasoningbenchmarkevaluatingmetareasoning,
+  title         = {OCR-MetaReasoning Benchmark: Evaluating the Meta-Reasoning Ability of MLLMs in Text-Rich Image Understanding},
+  author        = {Gengxu Li and Yuan Wu and Yi Chang},
+  year          = {2026},
+  eprint        = {2608.30678},
+  archivePrefix = {arXiv},
+  primaryClass  = {cs.CL},
+  url           = {https://arxiv.org/abs/2608.30678}
 }
 ```
 
@@ -436,7 +464,7 @@ This work is supported by the National Key Research and Development Program of C
 
 ## License
 
-See <code>LICENSE</code> for the project license. Please also consult the Hugging Face dataset card and the licenses of any upstream resources before redistributing derived data.
+See <code>LICENSE.txt</code> for the project license. Please also consult the Hugging Face dataset card and the licenses of any upstream resources before redistributing derived data.
 
 <div align="center">
 
