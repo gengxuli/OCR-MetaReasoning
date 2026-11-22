@@ -1,7 +1,7 @@
 import json
 import re
 from decimal import Decimal, InvalidOperation
-from typing import Any, Iterable, List, Optional, Tuple
+from typing import Any, Iterable, List, Optional, Tuple, Union
 
 
 FINAL_PATTERNS = [
@@ -513,17 +513,19 @@ def find_balanced_json(text: str, start: int) -> str:
     return ""
 
 
-def flatten_json(data: Any, prefix: str = "") -> List[Tuple[str, str]]:
+_JsonPath = Tuple[Union[str, int], ...]
+
+
+def flatten_json(data: Any, prefix: _JsonPath = ()) -> List[Tuple[_JsonPath, str]]:
     if isinstance(data, dict):
-        items: List[Tuple[str, str]] = []
+        items: List[Tuple[_JsonPath, str]] = []
         for key in sorted(data):
-            next_prefix = f"{prefix}.{key}" if prefix else str(key)
-            items.extend(flatten_json(data[key], next_prefix))
+            items.extend(flatten_json(data[key], prefix + (key,)))
         return items
     if isinstance(data, list):
         items = []
         for index, value in enumerate(data):
-            items.extend(flatten_json(value, f"{prefix}[{index}]"))
+            items.extend(flatten_json(value, prefix + (index,)))
         return items
     return [(prefix, normalize_string(data))]
 
